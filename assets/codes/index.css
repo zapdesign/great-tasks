@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
+
+*{margin: 0px; padding: 0px; font-family: "Lexend", sans-serif; text-decoration: none; transition: 300ms;}
+
+
+body{
+    background-color: #F2F6FF;
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F6FF;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    width: auto;
+    padding: 25px 200px;
+    box-shadow: 5px 5px 38.9px 0px rgba(0, 0, 0, 0.05);
+}
+
+div.perfil{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: end;
+}
+
+p.logo-perfil{
+    padding: 10px;
+    color: #B880FF;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    background: #EFE2FF;
+    cursor: pointer;
+}
+
+p.nome-perfil{
+    color: #B880FF;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: end;
+}
+
+p.dia-de-hoje{
+    color: #2E2E2E;
+    font-size: 12px;
+    text-align: end;
+}
+
+/* Conteúdo */
+
+section.conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: initial;
+    padding: 40px 200px 30px;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+div.fundo-resultados{
+    display: flex;
+    width: 176px;
+    height: 176px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    background-color: #F6F7FB;
+    border-radius: 5px;
+    gap: 20px;
+    box-shadow: 5px 5px 38.9px 0px rgba(0, 0, 0, 0.05);
+}
+
+div.header-resultados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    height: 45px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+p.nome-resultados{
+    color: #6C6C6C;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+p.resultados{
+    color: #B880FF;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 800;
+}
+
+/* Colunas tasks */
+
+div.fundo-coluna-tasks{
+    display: flex;
+    width: 384px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 38.9px 0px rgba(0, 0, 0, 0.05);
+}
+
+div.header-task{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: 100%;
+    height: 75px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+p.nome-tasks{
+    color: #2E2E2E;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+div.fundo-tasks{
+    background: #FAFBFF;
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 5px 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+input#input-criar-tarefa{
+    width: 100%;
+    padding: 14px 20px;
+    background: white;
+    color: #6C6C6C;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 38.9px 0px rgba(0, 0, 0, 0.05);
+}
+
+#desenvolvido{
+    margin-top: 25px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+#desenvolvido a{
+    color: #B880FF;
+}
+
+/* Popup */
+
+div.popup-login{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+}
+
+div.forms{
+    background: white;
+    padding: 35px 25px;
+    border-radius: 10px;
+}
+
+input#popup{
+    border: none;
+    border-radius: 10px;
+    background: #E9EFF6;
+    width: 100%;
+    height: 49px;
+    margin-top: 25px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    
+}
+
+button.enviar{
+        border: none;
+        border-radius: 10px;
+        background: #4460F1;
+        width: 100%;
+        height: 49px;
+        margin-top: 25px;
+        color: white;
+        box-shadow: 0px 6px 11px 0px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: 1s;
+}
+
+
+
+/* Popup notificação */
+
+div.popup-notificacao{
+    position: fixed;
+    top: 0;
+    left: 37%;
+    margin-top: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #B880FF;
+    height: 44px;
+    padding: 0px 25px;
+    gap: 10px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+div.popup-notificacao p{
+    font-size: 15px;
+    color: white;
+}
+
+/* Input dinamico */
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-bottom: 15px;
+    gap: 15px;
+}
+
+.divLi{
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 38.9px 0px rgba(0, 0, 0, 0.05);
+}
+
+#tasks-salvas{
+    color: #6C6C6C;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    padding: 15px;
+}
+
+.line-through{
+    text-decoration: line-through;
+    
+}
+
+#checkbox{
+    cursor: pointer;
+}
+
+#remove-lixo{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1439px){
+    div.fundo-coluna-tasks{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 806px) {
+    header{
+        padding: 25px 50px;
+        }
+    section.conteudo{
+        padding: 40px 50px 35px;
+    }
+    div.popup-notificacao{
+        left: 25%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.fundo-resultados{
+        width: 100%;
+    }
+    div.popup-notificacao{
+        left: 5%;
+    }
+    
+}

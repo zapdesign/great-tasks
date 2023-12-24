@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organize seu dia | Great Tasks</title>
+    <link rel="stylesheet" href="assets/codes/index.css">
+</head>
+
+<body>
+    <section id="body">
+        <div>
+            <header>
+                <img src="assets/img/logo.png" alt="">
+
+                <div class="perfil">
+                    <p class="logo-perfil" onclick="abrirNome()"><img src="assets/img/login icon.png" alt="" id="login-logo"></p>
+                    
+                    <div>
+                        <p class="nome-perfil">Sem perfil</p>
+                        <p class="dia-de-hoje">Dia de hoje: Domingo</p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="conteudo">
+
+                <div class="fundo-resultados">
+                    <div class="header-resultados">
+                        <p class="nome-resultados">Todas as tarefas</p>
+                    </div>
+                    
+                    <p class="resultados" id="resultado-total">0</p>
+                </div>
+
+                <div class="fundo-resultados">
+                    <div class="header-resultados">
+                        <p class="nome-resultados">Tarefas realizadas</p>
+                    </div>
+                    
+                    <p class="resultados" id="realizadas">0</p>
+                </div>
+
+                <div class="fundo-resultados">
+                    <div class="header-resultados">
+                        <p class="nome-resultados">Tarefas a serem feitas</p>
+                    </div>
+                    <p class="resultados" id="nao-realizadas">0</p>
+                </div>
+
+
+                <div class="fundo-coluna-tasks">
+                    <div class="header-task">
+                        <p class="nome-tasks">Suas tasks abaixo</p>
+                    </div>
+
+                    <div class="fundo-tasks">
+                        <ul></ul>
+                        <input type="text" id="input-criar-tarefa" placeholder="Crie uma nova tarefa...">
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+        <p id="desenvolvido">Desenvolvido por <a href="https://github.com/zapdesign" target="_blank"> Giuseppe Rogati </a></p>
+
+    </section>
+
+    <div class="popup-login">
+        <div class="forms">
+            <p class="nome-tasks">Adicione seu nome abaixo</p>
+            <input  type="email" name="" id="popup" class="input-nome" placeholder="Seu nome aqui....">
+            <button onclick="salvarNome()" class="enviar">Salvar perfil</button>
+        </div>
+    </div>
+
+    <div onclick="removerNotificacao()" class="popup-notificacao">
+        <img src="assets/img/notificação icon.svg" alt="">
+        <p class="notificacao"></p>
+    </div> 
+
+    <script src="assets/codes/script.js"></script>
+</body>
+</html>
